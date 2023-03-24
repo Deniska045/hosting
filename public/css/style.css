@@ -1,0 +1,412 @@
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.new{
+    width: 75.5%;
+    margin-left: 15.5%;
+
+}
+.new h2{
+    font-size: 30px;
+}
+
+.welcome{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.cards img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.cards a {
+    text-decoration: none;
+    color: red;
+    margin-left: 30%;
+}
+
+.signinup img{
+    margin-left: 40%;
+    height: 15px;
+    width: 15px;
+}
+
+.cards{
+    margin-left: 15%;
+    border: solid 1px;
+    width: auto;
+    padding: 20px;
+}
+
+.cards h5,p {
+   margin-left: 10%;
+}
+
+.d-flex {
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cards img {
+    margin-left: 10%;
+    margin-top: -5%;
+}
+
+.basket button{
+    margin-top: 15px;
+    background-color: #30810d;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+
+}
+
+.delivery{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-left: 25%;
+
+}
+
+
+.deliverysquare{
+    width: 272px;
+    height: 115px;
+    background-color: #f1f1f1;
+    margin-top: 10%;
+    margin-left: -10%;
+    text-align: center;
+}
+
+.deliverysquare p{
+    margin-top: -5%;
+}
+
+.samopng{
+    width: 100px;
+    height: 100px;
+}
+
+.deliverypng{
+    width: 150px;
+    height: 100px;
+}
+
+
+.request{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.request img{
+    margin-left: 35% ;
+}
+
+
+.logout{
+    margin-left: 30%;
+}
+
+.headers {
+display: grid;
+    justify-content: start;
+}
+
+.telephone img{
+    width: 80px;
+    height: 60px;
+    margin-top: 20%;
+    margin-left: -280%;
+}
+
+.number {
+    margin-left: -300%;
+    margin-top: 20%;
+}
+
+.square{
+    width: 100%;
+    height: 50px;
+    margin-top: 2%;
+    display: flex;
+}
+
+.sguareeee{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.sguareeee a{
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+.sguareeee a:hover {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.time h3 {
+    margin-top: -60%;
+    margin-left: 15px;
+}
+
+.time img {
+    width: 100px;
+    height: 100px;
+    margin-left: -80%;
+}
+
+.logo img{
+    width: 300px;
+    height: 120px;
+    margin-left: -70%;
+}
+
+.img{
+    margin-left: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+hr{
+    margin-top: -10px;
+}
+
+.avto{
+    margin-left: 10%;
+}
+.sign{
+    margin-left: 45%;
+}
+.sign a{
+ text-decoration: none;
+
+    color: black;
+}
+
+footer{
+    width: 80%;
+    margin-left: 17%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10%;
+}
+
+.vk img{
+    width: 70px;
+    height: 70px;
+    margin-left: 10%;
+}
+
+.footerclient a {
+text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 7px;
+
+}
+
+.rub {
+    line-height: 5px;
+    width: 0.4em;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.cardtovar{
+    border: 1px solid #b7b7b7;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.cardtovar button{
+    margin-top: 50px;
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+}
+
+.cardtovar img{
+    width: 240px;
+    height: 250px;
+}
+
+
+.card img{
+    margin-left: 10%;
+    width: 70%;
+}
+
+.location{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-left: 5%;
+}
+
+
+.sorting{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.sorting button {
+    margin-top: 15px;
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    margin-left: 100%;
+}
+
+.card{
+    border: 1px solid #b7b7b7;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.passwordcart{
+    margin-top: 10px;
+}
+
+.success{
+    margin-left: 21%;
+    margin-top: -10px;
+}
+
+.passwordcart button{
+    margin-left: 210px;
+}
+
+.passwordcart input {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-left: 20%;
+}
+
+.passwordcart label{
+    margin-left: 16%;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: #188605;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+}
+
+.tovar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: 15%;
+
+}
+
+.login-page {
+    width: 360px;
+    margin: auto;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #e8e7e7;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+a{
+    font-size: 20px;
+}
+
+.form::before{
+    content: '';
+    position: absolute;
+    background-color:#cbcbcb65 ;
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 14px;
+}
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #af4c4c;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #a04343;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #000000;
+    font-size: 20px;
+}
+.form .message a {
+    color: #4c51af;
+    text-decoration: none;
+}
+
+
+
+
