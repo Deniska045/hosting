@@ -4,7 +4,7 @@
 
 @section('content')
 
-<form method="post">
+<form method="get">
     @method('post')
     @csrf
     <select class="form-select mb-2" name="status" aria-label="Default select example">
