@@ -17,8 +17,8 @@
                 <input type="password" name="password" placeholder="Пароль" />
                 <input type="password" name="password_repeat" placeholder="Повторите пароль" />
                 <button>Зарегистрироваться</button>
-                <p class="message">Уже есть аккаунт? <a href="">Войти</a><br><a
-                        href="">Главная</a></p>
+                <p class="message">Уже есть аккаунт? <a href="{{route('login')}}">Войти</a><br><a
+                        href="{{route('home')}}">Главная</a></p>
             </form>
         </div>
     </div>

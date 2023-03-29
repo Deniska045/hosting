@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Service\PaymentService;
 use Illuminate\Support\ServiceProvider;
 use Nette\Schema\Schema;
 
@@ -15,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
    \Illuminate\Support\Facades\Schema::defaultStringLength(191);
+
     }
 
     /**
