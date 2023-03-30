@@ -15,6 +15,7 @@
                         'model_year' => 'По году производства',
                         'name' => 'По наименованию',
                         'price' => 'По цене',
+                        'quantity' => 'По колличеству товара',
                     ] as $key => $name)
                         <option @if($sort === $key) selected @endif value="{{$key}}">{{$name}}</option>
                     @endforeach
@@ -45,7 +46,6 @@
             <button class="btn btn-success mb-2" type="submit">Поиск</button>
         </div>
     </form>
-
     <div class="tovar">
         @forelse($items as $item)
             <div class="card " style="width: 18rem;">

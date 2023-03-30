@@ -50,4 +50,5 @@ class ItemController extends Controller
         $item->delete();
         return redirect()->route('admin.items.index');
     }
+
 }

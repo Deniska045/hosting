@@ -37,14 +37,20 @@ class PageController extends Controller
         return view('pages.location');
     }
 
+    public function Search_by_car_name() {
+        return view('pages.Search_by_car_name');
+    }
+
     public function list(Request $request) {
+
         $sort = $request->get('sort', 'id');
         $type = $request->get('type', 'desc');
+        $quantity = $request->get('quantity', 'quan');
         $categoryId = $request->get('category_id', null);
 
         $categories = Category::get();
 
-        $items = Item::orderBy($sort, $type);
+        $items = Item::orderBy($sort, $type,);
 
         if ($categoryId) {
             $items = $items->where('category_id', $categoryId);
@@ -52,10 +58,11 @@ class PageController extends Controller
 
         $items = $items->where('quantity', '>', 0)->simplePaginate(15);
 
-        return view('pages.list', compact('sort', 'type', 'categoryId', 'categories', 'items'));
+        return view('pages.list', compact('sort', 'type','quantity' , 'categoryId', 'categories', 'items'));
     }
 
     public function show(Item $item) {
         return view('pages.show', compact('item'));
     }
+
 }
