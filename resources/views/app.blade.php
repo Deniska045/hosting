@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{asset('public/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
 </head>
 <body class="container">
 <header>
@@ -20,7 +20,7 @@
                 <a class="logout" href="{{route('logout')}}">Выход</a>
             @else
                 <div class="signinup">
-                    <img src="{{asset('public/img/signin.png')}}" alt="">
+                    <img src="{{asset('/img/signin.png')}}" alt="">
                 </div>
                 <a class="nav-link" href="{{route('login')}}">Войти /</a>
                 <a class="nav-link" href="{{route('register')}}">Регистрация</a>
@@ -32,16 +32,16 @@
 <div class="headers">
     <div class="img">
         <div class="telephone">
-            <img src="{{asset('public/img/images.jfif')}}" alt="">
+            <img src="{{asset('/img/images.jfif')}}" alt="">
         </div>
         <div class="number">
             <h2>+7 (908) 831-12-04</h2>
         </div>
         <div class="logo">
-            <a href="{{route('home')}}"> <img src="{{asset('public/img/Logo.png')}}" alt=""></a>
+            <a href="{{route('home')}}"> <img src="{{asset('/img/Logo.png')}}" alt=""></a>
         </div>
         <div class="time">
-            <img src="{{asset('public/img/time.jpg')}}" alt="">
+            <img src="{{asset('/img/time.jpg')}}" alt="">
             <h3>Ежедненвно c 8:00 до 19:00</h3>
         </div>
 
