@@ -119,7 +119,7 @@ body{
 
 .headers {
 display: grid;
-    justify-content: start;
+    justify-content: center;
 }
 
 .telephone img{
