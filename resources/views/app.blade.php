@@ -96,7 +96,7 @@
     <div class="vk">
         <h3>Мы в соц сетях</h3>
         <a href="https://vk.com/autoplus45?ysclid=lf5r3j93g6371964416">
-            <img src="{{asset('/img/vk.png')}}" alt="">
+            <img src="{{asset('img/vk.png')}}" alt="">
         </a>
     </div>
     <div class="footerclient">
