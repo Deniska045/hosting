@@ -32,9 +32,11 @@
         </div>
         <div class="sign">
             @auth
-                <a class="nav-link" href="{{route('cart')}}">Корзина /</a>
-                <a class="nav-link" href="{{route('orders')}}">Мои заказы</a>
-                <a class="logout" href="{{route('logout')}}">Выход</a>
+                <div class="signn">
+                <a class="nav-link" href="{{route('cart')}}"><img src="{{asset('img/free-icon-shopping-basket-1077979.png')}}"></a>
+                <a class="nav-link" href="{{route('orders')}}"><img src="{{asset('img/free-icon-shopping-cart-8189317.png')}}"></a>
+                <a class="nav-link" href="{{route('logout')}}"><img src="{{asset('img/exit.png')}}"></a>
+                </div>
             @else
                 <div class="signinup">
                     <img src="{{asset('/img/signin.png')}}" alt="">
