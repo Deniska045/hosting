@@ -247,17 +247,9 @@ text-decoration: none;
     margin-left: 1%;
 }
 
-.cardtovar{
-    border: 1px solid #b7b7b7;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    width: 30%;
-    margin-left: 35%;
-}
 
-.cardtovar button{
-    margin-top: 50px;
+.cardtovar button {
+    margin-top: 65px;
     background-color: blue;
     color: white;
     width: 150px;
@@ -283,7 +275,20 @@ text-decoration: none;
     width: 80%;
     margin-left: 5%;
 }
+.cardtovar img {
+    /* height: 50%; */
+    margin-left: 30%;
+    width: 22%;
+    margin-top: 4%;
+}
 
+.m-2 {
+    margin-left: 55%;
+}
+
+.m-2 h2 {
+    margin-top: -45%;
+}
 
 .sorting{
     display: grid;
