@@ -200,6 +200,17 @@ hr{
     margin-left: 10%;
 }
 
+select.form-select {
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    height: 30px;
+}
+
 .sign a{
  text-decoration: none;
 
@@ -282,14 +293,15 @@ text-decoration: none;
 }
 
 .sorting button {
-    margin-top: 15px;
+    margin-top: 10px;
     background-color: blue;
     color: white;
     width: 150px;
     height: 30px;
     border: 1px solid #ffffff;
     font-size: 20px;
-    margin-left: 100%;
+    margin-left: 110%;
+    border-radius: 15px;
 }
 
 .card{
