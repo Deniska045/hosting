@@ -11,7 +11,7 @@ class AuthController extends Controller
     public function login(Request $request) {
         $request->validate([
             'login' => 'required|exists:users|alpha_dash',
-            'password' => 'required|min:6'
+            'password' => 'required|exists:users|min:6'
         ]);
 
         $user = User::where('login', $request->login)->where('password', $request->password)->first();
@@ -32,8 +32,9 @@ class AuthController extends Controller
             'surname' => 'required|alpha_dash',
             'patronymic' => 'alpha_dash',
             'login' => 'required|unique:users|alpha_dash',
-            'password' => 'required|min:6',
+            'password' => 'required|unique:users|min:6',
             'password_repeat' => 'required|same:password',
+
         ]);
 
         $userDto = $request->except('password_repeat', 'rules');
