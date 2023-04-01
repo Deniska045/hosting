@@ -58,7 +58,7 @@
             <a href="{{route('home')}}"> <img src="{{asset('/img/Logo.png')}}" alt=""></a>
         </div>
         <div class="time">
-            <img src="{{asset('/img/time.jpg')}}" alt="">
+            <img src="{{asset('/img/pngwing.com.png')}}" alt="">
             <h3>Ежедненвно c 8:00 до 19:00</h3>
         </div>
 
