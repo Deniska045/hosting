@@ -17,11 +17,12 @@ body{
     font-size: 30px;
 }
 
-.welcome{
+.welcome {
     width: 80%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
+    justify-content: space-around;
 }
 
 .cards img{
@@ -198,9 +199,7 @@ hr{
 .avto{
     margin-left: 10%;
 }
-.sign{
-    margin-left: 45%;
-}
+
 .sign a{
  text-decoration: none;
 
