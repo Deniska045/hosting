@@ -16,4 +16,8 @@ class Order extends Model
     protected $casts = [
         'items' => 'array'
     ];
+
+    public function payment(){
+        return $this->hasOne(Payment::class);
+    }
 }

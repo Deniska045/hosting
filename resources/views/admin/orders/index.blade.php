@@ -58,6 +58,7 @@
                         <button type="submit" class="btn btn-primary w-100">Отменить</button>
                     </form>
             @endif
+
         </div>
     @empty
         <div>

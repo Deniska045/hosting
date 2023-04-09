@@ -31,6 +31,7 @@ Route::get('/cart', [CartController::class, 'index'])->name('cart');
 Route::get('/orders', [OrderController::class, 'index'])->name('orders');
 Route::get('/list', [PageController::class, 'list'])->name('list');
 Route::get('/list/{item}', [PageController::class, 'show'])->name('show');
+Route::post('/notification', [PaymentController::class, 'handleNotification']);
 
 // Вход
 Route::prefix('login')->group(function () {
