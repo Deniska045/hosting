@@ -3,10 +3,10 @@
 @section('title', 'Категории')
 
 @section('content')
-<a href="{{route('admin.categories.createPage')}}" class="btn btn-success">Создать категорию</a>
+<a href="{{route('admin.categories.createPage')}}" class="btn btn-success mb-2 mt-2" style="margin-left: 40%">Создать категорию</a>
 
     @forelse($categories as $category)
-        <div class="card">
+        <div class="card ">
             <div class="card-body">
                 {{$category->name}}
                 <a href="{{route('admin.categories.delete', $category)}}" class="btn btn-danger ml-4">Удалить</a>

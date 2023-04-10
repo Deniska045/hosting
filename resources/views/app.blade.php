@@ -18,11 +18,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="public/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
 </head>
 <body class="container">
 <header>
@@ -33,9 +33,9 @@
         <div class="sign">
             @auth
                 <div class="signn">
-                <a class="nav-link" href="{{route('cart')}}"><img src="{{asset('img/free-icon-shopping-basket-1077979.png')}}"></a>
-                <a class="nav-link" href="{{route('orders')}}"><img src="{{asset('img/free-icon-shopping-cart-8189317.png')}}"></a>
-                <a class="nav-link" href="{{route('logout')}}"><img src="{{asset('img/exit.png')}}"></a>
+                <a class="nav-link" href="{{route('cart')}}"><img src="{{asset('/img/free-icon-shopping-basket-1077979.png')}}"></a>
+                <a class="nav-link" href="{{route('orders')}}"><img src="{{asset('/img/free-icon-shopping-cart-8189317.png')}}"></a>
+                <a class="nav-link" href="{{route('logout')}}"><img src="{{asset('/img/exit.png')}}"></a>
                 </div>
             @else
                 <div class="signinup">
@@ -82,8 +82,8 @@
     @yield('content')
 </div>
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="{{asset('/js/jquery.min.js')}}"></script>
+<script src="{{asset('/js/bootstrap.min.js')}}"></script>
 @stack('scripts')
 <script>
     const addToCart = (itemId, count = 1, reload = false) => {
@@ -115,7 +115,7 @@
     <div class="vk">
         <h3>Мы в соц сетях</h3>
         <a href="https://vk.com/autoplus45?ysclid=lf5r3j93g6371964416">
-            <img src="{{asset('img/vk.png')}}" alt="">
+            <img src="{{asset('public/img/vk.png')}}" alt="">
         </a>
     </div>
     <div class="footerclient">

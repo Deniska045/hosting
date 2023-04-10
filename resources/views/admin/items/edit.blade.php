@@ -19,6 +19,10 @@
             <input required value="{{$item->model_country}}" type="text" name="model_country" class="form-control">
         </div>
         <div class="mb-3">
+            <label class="form-label">Описание товара</label>
+            <input required value="{{$item->detail_information}}" type="text" name="model_country" class="form-control">
+        </div>
+        <div class="mb-3">
             <label class="form-label">Модель товара</label>
             <input required value="{{$item->model_type}}" type="text" name="model_type" class="form-control">
         </div>

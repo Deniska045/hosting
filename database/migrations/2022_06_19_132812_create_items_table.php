@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('model_country');
             $table->string('model_year');
             $table->string('model_type');
+            $table->string('detail_information');
             $table->string('image');
             $table->integer('price');
             $table->integer('quantity')->default(0);

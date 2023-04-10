@@ -19,6 +19,10 @@
         <label class="form-label">Страна производства товара</label>
         <input required type="text" name="model_country" class="form-control">
     </div>
+    <div class="mb-3">
+        <label class="form-label">Подробное описаание товара</label>
+        <input required type="text" name="detail_information" class="form-control">
+    </div>
 
     <div class="mb-3">
         <label class="form-label">Модель товара</label>

@@ -10,7 +10,7 @@ class Item extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'image', 'price', 'quantity', 'category_id', 'model_type', 'model_year', 'model_country'
+        'name', 'image', 'price', 'quantity','detail_information', 'category_id', 'model_type', 'model_year', 'model_country',
     ];
 
     public function isAvailable(){

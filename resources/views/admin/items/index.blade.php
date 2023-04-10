@@ -3,7 +3,7 @@
 @section('title', 'Товары')
 
 @section('content')
-    <a href="{{route('admin.items.createPage')}}" class="btn btn-success">Создать товар</a>
+    <a href="{{route('admin.items.createPage')}}" class="btn btn-success b-2 mt-2" style="margin-left: 40%"">Создать товар</a>
 
     <div class="d-flex flex-wrap">
         @forelse($items as $item)
