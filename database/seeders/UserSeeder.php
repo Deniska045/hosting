@@ -18,10 +18,10 @@ class UserSeeder extends Seeder
     {
         User::create([
             "login" => "Admin",
-            "name" => "John",
-            "surname" => "Doe",
+            "name" => "Денис",
+            "surname" => "Иванов",
             "role" => "admin",
-            "password" => "password",
+            "password" => "124578-You",
         ]);
     }
 }

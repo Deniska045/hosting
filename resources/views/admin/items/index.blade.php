@@ -9,7 +9,7 @@
         @forelse($items as $item)
             <div class="card me-2" style="width: 18rem;">
                 <img src="{{$item->image}}" class="card-img-top" alt="{{$item->name}}">
-                <div class="card-body">
+                <div class="card-body ">
                     <h5 class="card-title">{{$item->name}}</h5>
                     <p class="card-text">{{$item->quantity}} шт.</p>
                     <a href="{{route('admin.items.updatePage', $item)}}" class="btn btn-primary">Редактировать</a>
