@@ -30,7 +30,9 @@
                 </div>
                 <div class="half">
                     <div class="description">
-                        <p>{{$item->detail_information}}</p>
+                        <h3>Описания товара: </h3>
+                        <p> {{$item->detail_information}}</p>
+
                     </div>
                     <div class="reviews">
                         <h3>Количество товара: ({{$item->quantity}}) шт.</h3>
