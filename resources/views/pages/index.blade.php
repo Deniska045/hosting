@@ -29,7 +29,6 @@
                 </div>
             </div>
         @empty
-
         @endforelse
     </div>
 @endsection

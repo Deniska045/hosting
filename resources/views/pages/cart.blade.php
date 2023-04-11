@@ -4,36 +4,11 @@
 
 @section('content')
     <h2 style="text-align: center">Корзина</h2>
-    <div class="basket">
-    <div class="tovar">
-        @forelse($items as $item)
-            <div class="card" style="width: 18rem;">
-                <img src="{{$item['item']['image']}}" class="card-img-top" alt="{{$item['item']['image']}}">
-                <div class="card-body">
-                    <h5 class="card-title">{{$item['item']['name']}}</h5>
-                    <p class="card-text">Цена за одну штуку: {{$item['item']['price'] }}</p>
-                    <p class="card-text">Колличество: {{$item['count']}} шт.</p>
-                    <button data-id="{{$item['item']['id']}}" data-count="1" class="btn btn-success editCart">+
-                    </button>
-                    <button data-id="{{$item['item']['id']}}" data-count="-1" style="background-color: red"
-                            class="btn btn-danger editCart">-
-                    </button>
-                </div>
-            </div>
-
-        @empty
-
-                <div style="margin-left: 85px" role="alert">
-                    Корзина пуста
-                </div>
-                @endforelse
-            </div>
-
-            <div style="margin-top: 35px; margin-left: 20%;">
-
-                Финальная цена: {{$finalPrice}}
-            </div>
-
+    <div class="sdsadas">
+    <div class="fas">
+        <div class="finalprice">
+            <h3>Финальная цена: {{$finalPrice}}</h3>
+            <br>
             <form class="order">
                 @method('post')
                 @csrf
@@ -45,8 +20,45 @@
                 <button type="submit" class="success">Оформить</button>
 
             </form>
-            @endsection
+        </div>
     </div>
+        <div class="dasdsdfgdg">
+    <div class="basket">
+        <div class="tovar">
+            @forelse($items as $item)
+                <div class="card" style="width: 18rem;">
+                    <img src="{{$item['item']['image']}}" class="card-img-top" alt="{{$item['item']['image']}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$item['item']['name']}}</h5>
+                        <p class="card-text">Цена за одну штуку: {{$item['item']['price'] }}</p>
+                        <p class="card-text">Колличество: {{$item['count']}} шт.</p>
+                        <button data-id="{{$item['item']['id']}}" data-count="1" class="btn btn-success editCart">+
+                        </button>
+                        <button data-id="{{$item['item']['id']}}" data-count="-1" style="background-color: red"
+                                class="btn btn-danger editCart">-
+                        </button>
+                    </div>
+                </div>
+        </div>
+{{--<div class="cart">--}}
+{{--    <img src="{{$item['item']['image']}}" alt="">--}}
+{{--    <h5 class="cardss-title">Название{{$item['item']['name']}}</h5>--}}
+{{--   <h5 class="cardss-title">Цена за одну штуку: {{$item['item']['price'] }}</h5>--}}
+{{--    <button data-id="{{$item['item']['id']}}" data-count="1" class="btn btn-success editCart">+--}}
+{{--                            </button>--}}
+{{--                            <button data-id="{{$item['item']['id']}}" data-count="-1" style="background-color: red"--}}
+{{--                                    class="btn btn-danger editCart">---}}
+{{--                            </button>--}}
+{{--</div>--}}
+            @empty
+
+                <div style="margin-left: 85px" role="alert">
+                    Корзина пуста
+                </div>
+            @endforelse
+
+        @endsection
+
     @push('scripts')
         <script>
             $('.editCart').click(function () {

@@ -174,6 +174,18 @@ display: grid;
     margin-left: 15px;
 }
 
+.finalprice {
+    display: flex;
+    width: 110%;
+    height: 27%;
+    background-color: #ff0000;
+    margin-left: 25%;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    flex-direction: column;
+}
+
 .time img {
     width: 100px;
     height: 100px;
@@ -321,10 +333,15 @@ text-decoration: none;
 .passwordcart{
     margin-top: 10px;
 }
-
-.success{
-    margin-left: 21%;
-    margin-top: -10px;
+.success {
+    margin-top: 10px;
+    width: 110px;
+    height: 25%;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 14px;
+    background-color: #188605;
+    color: white;
 }
 
 .passwordcart button{
@@ -332,14 +349,12 @@ text-decoration: none;
 }
 
 .passwordcart input {
-    margin-top: 20px;
+    margin-top: 37px;
     border-radius: 10px;
-    border: solid 1px;
-    margin-left: 20%;
-}
-
-.passwordcart label{
-    margin-left: 16%;
+    border: 0;
+    margin-left: 0%;
+    width: 245px;
+    height: 30px;
 }
 
 .card button {
@@ -356,8 +371,16 @@ text-decoration: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    margin-left: 15%;
+    margin-left: 10%;
+    align-items: start;
+    /*margin-top: -1%;*/
+}
 
+
+.sdsadas {
+    display: flex;
+    /* align-content: flex-start; */
+    /* align-items: flex-end; */
 }
 
 .login-page {
@@ -880,9 +903,5 @@ button{
 }
 }
 }
-
-
-
-
 
 

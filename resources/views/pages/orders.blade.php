@@ -31,6 +31,7 @@
 
                             <a style="color: #1c7430" href="{{$order->toArray(null)["pay"]}}">Оплатить</a>
                         @endif
+
                     </div>
                 @empty
                     <div style="margin-left: 10%;" role="alert">
