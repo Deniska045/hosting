@@ -4,11 +4,11 @@
 
 @section('content')
     <div class="new">
-    <marquee direction="right">
-    <h2>5 новинок магазина</h2>
-    </marquee>
+        <marquee direction="right">
+            <h2>5 новинок магазина</h2>
+        </marquee>
     </div>
-    <div class="tovar">
+    <div class="indexgrid">
         @forelse($items as $index => $item)
             <div class="card" style="width: 18rem;">
                 <a href="{{route('show', $item)}}">
@@ -16,7 +16,7 @@
                          alt="{{$item->name}}">
                 </a>
                 <div class="card-body">
-                    <h3 class="card-title">Название товара: {{$item->name}}</h3>
+                    <h5 class="card-title">Название товара: {{$item->name}}</h5>
                     <p class="card-text">Цена товара: {{$item->price}}<span class="rub">Р</span></p>
                     <p class="card-text">Колличетсво товара: {{$item->quantity}} шт.</p>
                     @auth
@@ -28,7 +28,8 @@
                     @endauth
                 </div>
             </div>
-        @empty
-        @endforelse
     </div>
+    @empty
+    @endforelse
+
 @endsection

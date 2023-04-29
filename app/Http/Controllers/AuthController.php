@@ -23,7 +23,7 @@ class AuthController extends Controller
 
         Auth::login($user, true);
 
-        return $user;
+        return redirect()->route('home');
     }
 
     public function register(Request $request) {
@@ -42,7 +42,7 @@ class AuthController extends Controller
 
         Auth::login($user, true);
 
-        return $user;
+        return redirect()->route('home');
     }
 
     public function logout() {

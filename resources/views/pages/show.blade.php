@@ -37,6 +37,7 @@
                     <h2>Магазина Авто+</h2>
                 </div>
                 <div class="action">
+                    <a href="{{route('list')}}" class="btn btn-primary">Назад</a>
                     @auth
                         @if($item->isAvailable())
                             <button data-id="{{$item->id}}" class="btn btn-primary addToCart">В корзину</button>
