@@ -20,7 +20,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Описание товара</label>
-            <input required value="{{$item->detail_information}}" type="text" name="model_country" class="form-control">
+            <input required value="{{$item->detail_information}}" type="text" name="detail_information" class="form-control">
         </div>
         <div class="mb-3">
             <label class="form-label">Модель товара</label>
@@ -32,7 +32,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Количество товара</label>
-            <input required value="{{$item->quantity}}" type="number" name="available" class="form-control">
+            <input required value="{{$item->quantity}}" type="number" name="quantity" class="form-control">
         </div>
         <div class="mb-3">
             <label class="form-label">Категория товара</label>
